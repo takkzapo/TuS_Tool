@@ -158,7 +158,7 @@ public class Dos implements Runnable {
         wr.flush();
         wr.close();
         int responseCode = con.getResponseCode();
-        System.out.println("Tấn Công Thành Công! ┊" + responseCode + ("┊") +  " Số Luồng : " + this.seq);
+        System.out.println("Tấn Công Thành Công! ┊" + responseCode + "┊" +  " Số Luồng : " + this.seq);
     }
 
     private void getAttack(String url) throws Exception {
