@@ -72,7 +72,7 @@ public class Dos implements Runnable {
         String amount = in.nextLine();
 
         if (amount == null || amount.equals(null) || amount.equals("")) {
-            Dos.amount = 20000;
+            Dos.amount = 70000;
         } else {
             Dos.amount = Integer.parseInt(amount);
         }
@@ -94,7 +94,7 @@ public class Dos implements Runnable {
             }
         }
 
-        Thread.sleep(20000);
+        Thread.sleep(70000);
 
 
         System.out.println("► Bắt Đầu Tấn Công!");
