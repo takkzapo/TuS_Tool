@@ -46,17 +46,17 @@ public class Dos implements Runnable {
         }
     }
 
-   System.out.println();
-   System.out.println("DDDDD           SSSSS         TTTTTTT          SSSSS");
-   System.out.println("DD  DD   oooo  SS      xx  xx   TTT   uu   uu SS");
-   System.out.println("DD   DD oo  oo  SSSSS    xx     TTT   uu   uu  SSSSS");
-   System.out.println("DD   DD oo  oo      SS   xx     TTT   uu   uu      SS");
-   System.out.println("DDDDDD   oooo   SSSSS  xx  xx   TTT    uuuu u  SSSSS");
-   System.out.println();
-   System.out.println("               @2022 Copyright : Le Minh Tu & Zalo : 0782554949               "); 
-   System.out.println();        
+   System.out.print(     );
+   System.out.print("DDDDD           SSSSS         TTTTTTT          SSSSS");
+   System.out.print("DD  DD   oooo  SS      xx  xx   TTT   uu   uu SS");
+   System.out.print("DD   DD oo  oo  SSSSS    xx     TTT   uu   uu  SSSSS");
+   System.out.print("DD   DD oo  oo      SS   xx     TTT   uu   uu      SS");
+   System.out.print("DDDDDD   oooo   SSSSS  xx  xx   TTT    uuuu u  SSSSS");
+   System.out.print();
+   System.out.print("               @2022 Copyright : Le Minh Tu & Zalo : 0782554949               "); 
+   System.out.print();        
 
-    public static void main(String[] args) throws Exception {
+     public static void main(String[] args) throws Exception {
         String url = "";
         int attakingAmoun = 0;
         Dos dos = new Dos(0, 0);
