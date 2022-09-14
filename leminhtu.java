@@ -46,6 +46,14 @@ public class Dos implements Runnable {
         }
     }
 
+     print("DDDDD           SSSSS         TTTTTTT          SSSSS")
+     print("DD  DD   oooo  SS      xx  xx   TTT   uu   uu SS")
+     print("DD   DD oo  oo  SSSSS    xx     TTT   uu   uu  SSSSS")
+     print("DD   DD oo  oo      SS   xx     TTT   uu   uu      SS")
+     print("DDDDDD   oooo   SSSSS  xx  xx   TTT    uuuu u  SSSSS")
+     print()
+     print("               @2022 Copyright : Le Minh Tu & Zalo : 0782554949               ") 
+     print()        
 
     public static void main(String[] args) throws Exception {
         String url = "";
