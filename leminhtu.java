@@ -66,7 +66,7 @@ public class Dos implements Runnable {
             dos.sslCheckConnection(url);
         }
 
-        System.out.println("► Setting DoS By : Le Minh Tu");
+        System.out.println("► @ 2022 Bản quyền: Lê Minh Tú & Zalo: 0782554949");
 
         System.out.print("► Số Luồng : ");
         String amount = in.nextLine();
@@ -131,7 +131,7 @@ public class Dos implements Runnable {
     }
 
     private void sslCheckConnection(String url) throws Exception {
-        System.out.println("Checking Connection (ssl)");
+        System.out.println("Kiểm tra kết nối (SSL)");
         URL obj = new URL(url);
         HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
@@ -139,7 +139,7 @@ public class Dos implements Runnable {
 
         int responseCode = con.getResponseCode();
         if (responseCode == 200) {
-            System.out.println("► Connected to website");
+            System.out.println("► Đã kết nối đến Website");
         }
         Dos.url = url;
     }
