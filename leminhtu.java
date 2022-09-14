@@ -46,15 +46,15 @@ public class Dos implements Runnable {
         }
     }
 
-   System.out.println()
-   System.out.println("DDDDD           SSSSS         TTTTTTT          SSSSS")
-   System.out.println("DD  DD   oooo  SS      xx  xx   TTT   uu   uu SS")
-   System.out.println("DD   DD oo  oo  SSSSS    xx     TTT   uu   uu  SSSSS")
-   System.out.println("DD   DD oo  oo      SS   xx     TTT   uu   uu      SS")
-   System.out.println("DDDDDD   oooo   SSSSS  xx  xx   TTT    uuuu u  SSSSS")
-   System.out.println()
-   System.out.println("               @2022 Copyright : Le Minh Tu & Zalo : 0782554949               ") 
-   System.out.println()        
+   System.out.println();
+   System.out.println("DDDDD           SSSSS         TTTTTTT          SSSSS");
+   System.out.println("DD  DD   oooo  SS      xx  xx   TTT   uu   uu SS");
+   System.out.println("DD   DD oo  oo  SSSSS    xx     TTT   uu   uu  SSSSS");
+   System.out.println("DD   DD oo  oo      SS   xx     TTT   uu   uu      SS");
+   System.out.println("DDDDDD   oooo   SSSSS  xx  xx   TTT    uuuu u  SSSSS");
+   System.out.println();
+   System.out.println("               @2022 Copyright : Le Minh Tu & Zalo : 0782554949               "); 
+   System.out.println();        
 
     public static void main(String[] args) throws Exception {
         String url = "";
