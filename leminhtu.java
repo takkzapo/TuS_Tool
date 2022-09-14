@@ -46,8 +46,7 @@ public class Dos implements Runnable {
         }
     }
 
-     public static void main(String[] args) {
-   System.out.print(     );
+     public static void main(String[] args) throws Exception {   System.out.print(     );
    System.out.print("DDDDD           SSSSS         TTTTTTT          SSSSS");
    System.out.println("DD  DD   oooo  SS      xx  xx   TTT   uu   uu SS");
    System.out.println("DD   DD oo  oo  SSSSS    xx     TTT   uu   uu  SSSSS");
